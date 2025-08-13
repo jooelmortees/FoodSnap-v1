@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodSnap – Cocina con lo que tienes</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23388E3C'/%3E%3Cg stroke='%23FFFFFF' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='32' cy='18' r='12'/%3E%3Crect x='10' y='34' width='44' height='20' rx='6'/%3E%3Cline x1='32' y1='34' x2='32' y2='54'/%3E%3C/g%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Custom scrollbar for a more polished look */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c1c1c1; /* Softer scrollbar color */
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #a1a1a1;
+    }
+    body {
+        font-size: 16px; /* Slightly increased base font size */
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              DEFAULT: '#388E3C', // Darker Green
+              light: '#4CAF50',   // Original Green (now light)
+              dark: '#2E7D32',    // Even Darker Green
+            },
+            secondary: {
+              DEFAULT: '#FB8C00', // Richer Orange
+              light: '#FFA726',
+              dark: '#F57C00',
+            },
+            accent: {
+              DEFAULT: '#0288D1', // Slightly darker, more professional blue
+              light: '#03A9F4',
+            },
+            background: '#F8F9FA', // Subtle off-white, slightly different
+            surface: '#FFFFFF',
+            onSurface: {
+              DEFAULT: '#212529', // Darker text for better contrast
+              light: '#495057', // Lighter text for secondary info
+            },
+            error: {
+              DEFAULT: '#D32F2F', // Slightly darker red
+              light: '#F44336',
+            },
+            gray: { // Extended gray palette for more nuanced UI
+              50: '#F9FAFB',
+              100: '#F3F4F6',
+              200: '#E5E7EB',
+              300: '#D1D5DB',
+              400: '#9CA3AF',
+              500: '#6B7280',
+              600: '#4B5563',
+              700: '#374151',
+              800: '#1F2937',
+              900: '#111827',
+            }
+          },
+          boxShadow: {
+            'md': '0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04)',
+            'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.03)',
+            'xl': '0 20px 25px -5px rgba(0, 0, 0, 0.07), 0 10px 10px -5px rgba(0, 0, 0, 0.03)',
+            '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.1)',
+          },
+          borderRadius: {
+            'xl': '0.75rem', // 12px
+            '2xl': '1rem', // 16px
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1",
+    "path": "https://esm.sh/path@^0.12.7",
+    "vite": "https://esm.sh/vite@^7.0.0",
+    "url": "https://esm.sh/url@^0.11.4",
+    "react-native": "https://esm.sh/react-native@^0.80.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background font-sans text-onSurface antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

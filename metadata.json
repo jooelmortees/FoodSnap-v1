@@ -1,0 +1,8 @@
+{
+  "name": "FoodSnap – Cocina con lo que tienes",
+  "description": "FoodSnap transforma ingredientes sueltos en platos deliciosos, usando IA para reconocer, planificar, sugerir y optimizar tus comidas diarias. Hazle una foto a tu nevera o despensa, y te diremos exactamente qué puedes cocinar ahora mismo.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
